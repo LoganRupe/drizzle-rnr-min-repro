@@ -5,7 +5,7 @@ This was a fork of the original `react-native-reusables` template starter base f
  - React-Native-Reusables (RNR) - https://rnr-docs.vercel.app/getting-started/initial-setup/
  - Drizzle Studio for Expo SQLite - https://github.com/drizzle-team/drizzle-studio-expo
 
- Fortunately, creating this minimal reproduction highlighted the issue and I was able to fix my app. The issue was that I needed to update to the latest expo@52 and switch to the `newArchitecture=true` in `app.json`.
+ Fortunately, creating this minimal reproduction highlighted the issue and I was able to fix my app. The issue was that I needed to update to the latest expo@52 and switch to the `newArchEnabled=true` in `app.json`.
 
 # Starter base
 
