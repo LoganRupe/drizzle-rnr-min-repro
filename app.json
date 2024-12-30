@@ -3,6 +3,7 @@
     "name": "Starter Base",
     "slug": "starter-base",
     "version": "1.0.0",
+    "newArchEnabled": true,
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
