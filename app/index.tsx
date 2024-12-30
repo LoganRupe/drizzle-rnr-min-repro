@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useDrizzleStudio } from "expo-drizzle-studio-plugin";
+import * as SQLite from "expo-sqlite";
 import { View } from 'react-native';
 import Animated, { FadeInUp, FadeOutDown, LayoutAnimationConfig } from 'react-native-reanimated';
 import { Info } from '~/lib/icons/Info';
@@ -19,7 +21,10 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '~/components/ui/tooltip
 const GITHUB_AVATAR_URI =
   'https://i.pinimg.com/originals/ef/a2/8d/efa28d18a04e7fa40ed49eeb0ab660db.jpg';
 
+const db = SQLite.openDatabaseSync("db");
+
 export default function Screen() {
+  useDrizzleStudio(db);
   const [progress, setProgress] = React.useState(78);
 
   function updateProgressValue() {
